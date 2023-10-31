@@ -26,11 +26,6 @@ def TLR(year, toFind):
 
 
 # print(TLR(2017, 79.12))
-# print(TLR(2018))
-# print(TLR(2019))
-# print(TLR(2020))
-# print(TLR(2021))
-# print(TLR(2023))
 
 
 def RPC(year):
@@ -56,12 +51,7 @@ def RPC(year):
     return rank
 
 
-# print(RPC(2017))
-# print(RPC(2018))
-# print(RPC(2019))
-# print(RPC(2020))
-# print(RPC(2021))
-# print(RPC(2023))
+# print(RPC(2017, 79.12))
 
 
 def GO(year):
@@ -88,12 +78,7 @@ def GO(year):
     return rank
 
 
-# print(GO(2017))
-# print(GO(2018))
-# print(GO(2019))
-# print(GO(2020))
-# print(GO(2021))
-# print(GO(2023))
+# print(GO(2017, 79.12))
 
 
 def OI(year):
@@ -120,12 +105,7 @@ def OI(year):
     return rank
 
 
-# print(OI(2017))
-# print(OI(2018))
-# print(OI(2019))
-# print(OI(2020))
-# print(OI(2021))
-# print(OI(2023))
+# print(OI(2017, 79.12))
 
 
 def Perception(year):
@@ -152,9 +132,4 @@ def Perception(year):
     return rank
 
 
-# print(Perception(2017))
-# print(Perception(2018))
-# print(Perception(2019))
-# print(Perception(2020))
-# print(Perception(2021))
-# print(Perception(2023))
+# print(Perception(2017, 79.12))
