@@ -28,19 +28,20 @@ def TLR(year, toFind):
 # print(TLR(2017, 79.12))
 
 
-def RPC(year):
+def RPC(year, toFind):
     file_path = f"overall ranking/OverallRanking_{year}.csv"
     df = pd.read_csv(file_path)
     df_sorted = df.sort_values(by="RPC", ascending=False)
     result_df = df_sorted[["Institute Name", "RPC"]]
     result_df.index = result_df.index + 1
     rpc_dict = result_df.set_index("Institute Name")["RPC"].to_dict()
+    RPClist = list(rpc_dict.values())
     i = 0
     e = len(RPClist) - 1
     rank = 0
     while i <= e:
         mid = int(i + (e - i) / 2)
-        if TRPCist[mid] == toFind:
+        if RPClist[mid] == toFind:
             rank = mid + 1
             break
         elif RPClist[mid] < toFind:
@@ -54,7 +55,7 @@ def RPC(year):
 # print(RPC(2017, 79.12))
 
 
-def GO(year):
+def GO(year, toFind):
     file_path = f"overall ranking/OverallRanking_{year}.csv"
     df = pd.read_csv(file_path)
     df_sorted = df.sort_values(by="GO", ascending=False)
@@ -81,7 +82,7 @@ def GO(year):
 # print(GO(2017, 79.12))
 
 
-def OI(year):
+def OI(year, toFind):
     file_path = f"overall ranking/OverallRanking_{year}.csv"
     df = pd.read_csv(file_path)
     df_sorted = df.sort_values(by="RPC", ascending=False)
@@ -108,7 +109,7 @@ def OI(year):
 # print(OI(2017, 79.12))
 
 
-def Perception(year):
+def Perception(year, toFind):
     file_path = f"overall ranking/OverallRanking_{year}.csv"
     df = pd.read_csv(file_path)
     df_sorted = df.sort_values(by="RPerception", ascending=False)
